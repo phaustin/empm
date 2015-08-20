@@ -16,17 +16,15 @@ c234567
       dt = 0.75
 c234567
       open(62,
-c    $ file='output/rtime.dat',
-     $ file='output/rtime.dat',     
+     $ file='./rtime.dat',     
      $ form='unformatted')
      
            open(63,
-     $ file='output/xtime.dat',     
+     $ file='./xtime.dat',     
      $ form='unformatted')
 
 	open(unit = 97, 
-c    $ file = 'output/t_index.dat',
-     $ file = 'output/t_index.dat',
+     $ file = './t_index.dat',
      $ form='formatted')
 
 	do ip = 1, ipreal
@@ -45,7 +43,7 @@ c    $ file = 'output/t_index.dat',
         close(unit = 97)
 
 c  check for correct reading
-	    open(10,file='output/mean_vol_radius.dat')
+	    open(10,file='../output/mean_vol_radius.dat')
         do ip = 1, ipreal
         rv3_sum = 0.
           do i = 1,m_index
@@ -56,7 +54,7 @@ c  check for correct reading
         end do
         close(10)
  
-	    open(10,file='output/mean_location.dat')
+	    open(10,file='../output/mean_location.dat')
         do ip = 1, ipreal
         x_sum = 0.
           do i = 1,m_index

@@ -15,13 +15,13 @@ c   dx: grid size (m)
       real*8 dx, time2
       
       open (10,file=
-     $ 'output/qvtime.dat',
+     $ './qvtime.dat',
 c    $ 'output/temptime.dat',
      $ status='old',access='sequential',form='unformatted')
 
 C  writes file to current directory     
       open (20,file=
-     $'output/qvtime_easy.dat',
+     $'../output/qvtime_easy.dat',
      $ status='new',access='sequential',
      $ form='unformatted')
       

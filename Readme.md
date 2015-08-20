@@ -34,13 +34,13 @@ http://www.inscc.utah.edu/~krueger/EMPM/c_eps29_small.tar.gz
 
 1. compile the code:
 
-   $ bash command1
+   $ bash -v command1
 
-   which compiles the executable c_eps29x
+   which compiles the executable c_eps29x with some warnings
 
 1. Run this in src.:
 
-    $ ./c_eps29x > c_eps29x.output &
+        $ ./c_eps29x > c_eps29x.output &
 
     This produces the following files in the local src directory:
 
@@ -72,22 +72,18 @@ http://www.inscc.utah.edu/~krueger/EMPM/c_eps29_small.tar.gz
         -rw-r--r--    1 phil  staff         0 Aug 20 15:39 dgm.dat
         -rw-r--r--    1 phil  staff      3185 Aug 20 15:39 fort.76
 
-1. gfortran read_writeTQ.f => qvtime_easy.dat
+1. compile and run the reformatting routine for temperature and vapor
 
-1. f77 empm_read_new_incus.f => mean_vol_radius.dat, mean_location.dat
+        $ gfortran -o read_writeTQ read_writeTQ.f
 
-1. ls -lt > file_list.txt
+   which reads ./qvtime.dat and writes ../output/qvtime_easy.dat
 
-1. delete large output files:
--rw-r--r--  1 skrueger meteorology 48084164 May 11 16:52 qvtime.dat
--rw-r--r--  1 skrueger meteorology 48084164 May 11 16:52 temptime.dat
--rw-r--r--  1 skrueger meteorology 48016000 May 11 17:22 qvtime_easy.dat
--rw-r--r--  1 skrueger meteorology 32036000 May 11 16:52 xtime.dat
--rw-r--r--  1 skrueger meteorology 16036000 May 11 16:52 rtime.dat
+1. compile and run the
 
-1. delete some unneeded files: 
-indextime.dat qwmov.dat fort.11
+        $ gfortran -o empm_read_new_incus empm_read_new_incus.f
 
-1. make tar files: 
-/data/skrueger/skrueger/EMPM/empm.tar.gz
-/data/skrueger/skrueger/EMPM/output.tar.gz
+   which reads ./rtime.dat, ./xtime.dat and ./t_index.dat and writes
+
+   ../output/mean_vol_radius.dat and ../output/mean_location.dat
+
+
