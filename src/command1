@@ -1,0 +1,19 @@
+gfortran -O2 -o c_eps29x\
+ sca2_entm.f d_m.f entm_r.f findsp.f water.f msd.f\
+ thetaq.f spfind.f constants.f ew.f \
+tsat.f fq.f blockdata.f domain0701.f assigd.f\
+ accu_ab.f index.f\
+ mean_rms.f average_2.f\
+ sort_m1.f\
+ raverage.f\
+ rkck.f rkqs.f odeint.f\
+ fcnkb.f\
+ fdtime.f\
+ intpol.f fintrp.f\
+ assigd2.f\
+ psplint.f\
+ rand1.f\
+ mov_sort.f\
+ mov_prob.f\
+ max_min.f\
+ rmax.f
