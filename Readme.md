@@ -1,4 +1,29 @@
-Initial check-in Files downloaded from  http://www.inscc.utah.edu/~krueger/EMPM/
+#Source code fo Su et al., 1998:  Linear eddy modeling ...
+
+## Citation
+
+@ARTICLE{Su98,
+author = {Su, Chwen-Wei and Krueger, Steven K. and McMurtry, Patrick A. and Austin, Philip H.},"
+title = {Linear eddy modeling of droplet spectral evolution during entrainment and mixing in cumulus clouds},"
+journal = {Atmospheric Research},"
+volume = {47-48},
+year = {98},
+pages = {41-58},
+doi = {10.1016/S0169-8095(98)00039-8},
+resource = {http://linkinghub.elsevier.com/retrieve/pii/S0169809598000398},
+alternate_resource = {http://clouds.eos.ubc.ca/~phil/austinpapers/su98.pdf}
+}
+
+## License
+
+https://creativecommons.org/licenses/by/3.0/
+
+
+## build instructions
+
+Initial check-in.   Files originally downloaded from
+
+http://www.inscc.utah.edu/~krueger/EMPM/c_eps29_small.tar.gz
 
 Creation of tar files sent to Dave Turner, 5-11-07:
 
