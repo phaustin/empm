@@ -572,7 +572,7 @@ c
 c Read Raga's Hawaiian sounding
 c
 c open (51,file='Raga_ob_low.dat')
-	open (51,file='Raga_ob.dat')
+	open (51,file='../data/Raga_ob.dat')
 
 
 Copen (51,file='Raga_ob_70.dat')
@@ -763,7 +763,7 @@ c. drop.data900 means output after 900 seconds.
 c.
 
 C OPEN (UNIT=7,FILE='drop.data.new2')
-        OPEN (UNIT=7,FILE='drop.data.new')
+        OPEN (UNIT=7,FILE='../data/drop.data.new')
         do i=1,NE+6
            read(7,*)radius_drop(i)
         enddo
@@ -1080,7 +1080,7 @@ c
 c consider entrained ccns here
 c
 c  open(29,file='en_ccn_low.dat')
-        open(29,file='en_ccn.dat')
+        open(29,file='../data/en_ccn.dat')
 Copen(29,file='en_ccn70.dat')
         do i=1,49 
         read(29,*)en_dsize(i)

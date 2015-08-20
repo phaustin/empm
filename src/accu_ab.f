@@ -13,7 +13,7 @@ c. of the initial droplet distribution
         logical LF
 
         
-	open (unit=81,file='rnr_data_new')
+	open (unit=81,file='../data/rnr_data_new')
 Copen (unit=81,file='rnr_data900')
 Copen (unit=81,file='rnr_data_new2')
         do i=1,NE
